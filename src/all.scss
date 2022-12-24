@@ -1,0 +1,26 @@
+$color-e7e7-primary: #e7e7;
+$color-blue-primary: blue;
+
+.title {
+  color: $color-e7e7-primary;
+  font-size: 16px;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  height: 200px;
+  width: 200px;
+}
+
+.child {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+}
+
+.text-primary {
+  color: $color-blue-primary;
+}
