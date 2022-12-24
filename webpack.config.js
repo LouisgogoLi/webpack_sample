@@ -40,6 +40,18 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.m?js$/,
+        // 排除 node_modules 與 bower_components 底下資料 (第二步)
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: "babel-loader",
+        },
+      },
+      {
+        test: /.(png|jpe?g|gif|webp|svg)$/,
+        type: "asset",
+      },
     ],
   },
   plugins: [
